@@ -1,10 +1,10 @@
 Barnyard-buddies is a pet adoption website with a React frontend and Django framework backend.
 
-Features
+**Features**
 ***
 - Live chat box between users
 
-How to Run
+**How to Run in development**
 ***
 In the terminal, after navigating to the client folder run:
 ```
@@ -12,8 +12,10 @@ npm install
 npm run dev
 ```
 
-After navigating to the Server folder run:
+After navigating to the Server folder (Use a virtual Enviroment) run:
 ```
-npm install 
-npm run dev
+pip install -r .\requirements.txt
+./manage makemigrations
+./manage mirgrate
+./manage runserver
 ```
