@@ -1,10 +1,10 @@
 Barnyard-buddies is a pet adoption website with a React frontend and Django framework backend.
 
-**Features**
-***
+# Features
+
 - Live chat box between users
 
-**How to Run in development**
+# How to Run in development
 you will need these installed on your machine
 ```
 sudo apt-get update
