@@ -27,4 +27,5 @@ pip install -r .\requirements.txt
 ./manage runserver
 ```
 The site is deployed on https://barnyard-buddies-k1ra.onrender.com/
+
 Origin Repository link with complete history: https://markus.teach.cs.toronto.edu/git/2023-09/csc309/group_3573
