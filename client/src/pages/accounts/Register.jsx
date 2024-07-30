@@ -17,6 +17,7 @@ import {
     Text,
     VStack,
 } from '@chakra-ui/react';
+import { API_URL } from '../../constants';
 
 import { useNavigate } from 'react-router-dom';
 
@@ -133,7 +134,7 @@ const RegistrationPage = () => {
                     <Heading textAlign="center">
                         Register a <Text color="blue.500">Barnyard Buddies</Text> Account
                     </Heading>
-                    <Text fontsize="md" align="center" pb={4}>Already have an account? <Link color="blue.500" href="/login">Log In</Link></Text>
+                    <Text fontSize="md" align="center" pb={4}>Already have an account? <Link color="blue.500" href="/login">Log In</Link></Text>
                     {displayWarning && (
                         <Alert status="error" borderRadius="lg" mb={3}>
                             <AlertIcon />
