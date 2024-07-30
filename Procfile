@@ -1,1 +1,1 @@
-web: gunicorn server.petpal.wsgi --log-file -
+web: gunicorn server.petpal.wsgi:application --chdir server --log-file -
