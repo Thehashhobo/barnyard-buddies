@@ -11,7 +11,6 @@ import {
   FormLabel,
   Heading,
   Input,
-  Link,
   Text,
 } from '@chakra-ui/react';
 import { useNavigate, Link } from 'react-router-dom';
