@@ -14,7 +14,7 @@ import {
   Link,
   Text,
 } from '@chakra-ui/react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import { API_URL } from '../../constants';
 
 const LoginPage = () => {
