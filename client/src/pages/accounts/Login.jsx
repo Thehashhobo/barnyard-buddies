@@ -11,9 +11,10 @@ import {
   FormLabel,
   Heading,
   Input,
+  Link,
   Text,
 } from '@chakra-ui/react';
-import { useNavigate, Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { API_URL } from '../../constants';
 
 const LoginPage = () => {
@@ -39,7 +40,8 @@ const LoginPage = () => {
     try {
       // Call 1: POST to /accounts/login/ to get access and refresh tokens
       const response = await axios.post(
-        `${API_URL}accounts/login/`,
+        `${API_URL}accounts/login/`
+,
         loginFormData,
         {
           headers: {
@@ -125,7 +127,7 @@ const LoginPage = () => {
         )}
         <Text fontsize='md' align='center' pb={4}>
           Do not have an account?{' '}
-          <Link to='/register' color='blue.500'>
+          <Link color='blue.500' href='/register'>
             Register!
           </Link>
         </Text>
