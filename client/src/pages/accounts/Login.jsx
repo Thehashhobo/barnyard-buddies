@@ -126,7 +126,7 @@ const LoginPage = () => {
         )}
         <Text fontsize='md' align='center' pb={4}>
           Do not have an account?{' '}
-          <Link color='blue.500' href='https://barnyard-buddies.netlify.app/register'>
+          <Link to='/register' color='blue.500'>
             Register!
           </Link>
         </Text>
