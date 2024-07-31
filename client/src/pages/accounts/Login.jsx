@@ -40,7 +40,7 @@ const LoginPage = () => {
     try {
       // Call 1: POST to /accounts/login/ to get access and refresh tokens
       const response = await axios.post(
-        'http://localhost:8000/accounts/login/',
+        `${API_URL}accounts/login/`,
         loginFormData,
         {
           headers: {
@@ -126,7 +126,7 @@ const LoginPage = () => {
         )}
         <Text fontsize='md' align='center' pb={4}>
           Do not have an account?{' '}
-          <Link color='blue.500' href='/register'>
+          <Link color='blue.500' href='https://barnyard-buddies.netlify.app/register'>
             Register!
           </Link>
         </Text>
