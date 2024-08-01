@@ -1,5 +1,5 @@
 # Project Overview
-The Barnyard Buddies project is an interactive single-page web application designed to help find new homes for animals by providing a seamless way for pet shelters and potential adopters to connect. This project features an engaging user interface and robust functionality to draw attention and facilitate user interactions.
+The Barnyard Buddies project is an interactive single-page web application designed to help find new homes for animals by providing a seamless way for pet shelters and potential adopters to connect. This project features an engaging user interface and robust functionality to draw attention and facilitate user interactions. \
 The website is hosted on github pages: [barnyard-buddies.netlify.app](https://barnyard-buddies.netlify.app/)
 
 ## Features
@@ -24,7 +24,7 @@ Before you begin, ensure you have the following installed on your machine:
 - [Node.js](https://nodejs.org/en/) (v18.x or later)
 - [npm](https://www.npmjs.com/) (v9.x or later)
 - [python3](https://www.python.org/downloads/) (v3.9x or later)
-- [python3-pip] (https://pip.pypa.io/en/stable/installation/) (v22.x or later)
+- [python3-pip](https://pip.pypa.io/en/stable/installation/) (v22.x or later)
 - [nginx](https://nginx.org/en/download.html) (v1.20.x or later)
 
 Alternatively, you can install these prerequisites via:
@@ -33,7 +33,7 @@ sudo apt-get update
 sudo apt-get install nodejs npm python3 python3-pip nginx
 ```
 ### Installation
-Clone the repository to your local machine:
+Clone the repository to your local machine: \
 `git clone https://github.com/Thehashhobo/barnyard-buddies.git`
 
 #### Client setup
@@ -82,6 +82,6 @@ This project is a collaborative effort with each team member contributing to bot
 - [Thehashhobo](https://github.com/Thehashhobo)
 - [Majda](https://github.com/majdaloj)
 - [Salwa](https://github.com/sms-sudo)
-- [Nafio](https://github.com/nafiomiah)
+- [Nafio](https://github.com/nafiomiah) \
 Origin Repository with complete history: https://github.com/Thehashhobo/ProjectHistory
 
