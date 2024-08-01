@@ -27,12 +27,12 @@ import {
 } from '@chakra-ui/react';
 import PetListingForm from '../petListings/CreateUpdateListing';
 import PropTypes from 'prop-types';
-import { API_URL, STATIC_URL} from '../../constants';
+import { API_URL, getImageUrl} from '../../constants';
 
 function PetListingCard(pet) {
 
     const navigate = useNavigate();
-    const imageUrl = pet.avatar ? `${STATIC_URL}avatar/${pet.avatar}` : defaultImage;
+    const imageUrl = getImageUrl(pet.avatar)
 
     const { isOpen: isModalOpen, onOpen: onModalOpen, onClose: onModalClose } = useDisclosure();
     const formRef = useRef();
