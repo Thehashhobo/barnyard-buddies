@@ -7,7 +7,7 @@ import { Card, Grid, Image, CardBody, Text, GridItem, Divider, Stack, Button, Ce
 import { EmailIcon } from "@chakra-ui/icons";
 import { useMediaQuery } from 'react-responsive'
 import TimeAgo from 'react-timeago'
-import { API_URL } from '../../constants';
+import { API_URL, STATIC_URL } from '../../constants';
 
 function PetListingDetailPage() {
     const navigate = useNavigate();
@@ -57,7 +57,7 @@ function PetListingDetailPage() {
     if (!pet) {
         return <div>Loading...</div>;
     }
-    const imageUrl = `${API_URL}${pet.avatar}` || defaultImage;
+    const imageUrl = pet.avatar ? `${STATIC_URL}avatar/${pet.avatar}` : defaultImage;
     let color;
     if (pet.status === 'pending'){
         color = '#ffc36d'; //yellow
