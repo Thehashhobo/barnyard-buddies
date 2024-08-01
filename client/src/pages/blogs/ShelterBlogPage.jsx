@@ -22,7 +22,7 @@ import {
   Alert,
   AlertIcon,
 } from '@chakra-ui/react';
-import { API_URL } from '../../constants';
+import { API_URL, getImageUrl } from '../../constants';
 
 import { useParams } from 'react-router-dom';
 
@@ -263,7 +263,7 @@ const ShelterBlogPage = () => {
                 </Text>
                 {blog_post.image && (
                   <img
-                    src={blog_post.image}
+                    src={getImageUrl(blog_post.image)}
                     alt={blog_post.title}
                     style={{
                       maxWidth: '100%',

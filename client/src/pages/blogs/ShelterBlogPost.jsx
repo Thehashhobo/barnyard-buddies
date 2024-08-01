@@ -19,7 +19,7 @@ import { AiFillHeart } from 'react-icons/ai';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
-import { API_URL } from '../../constants';
+import { API_URL, getImageUrl } from '../../constants';
 
 const formatDate = (timestamp) => {
   const options = {
@@ -169,7 +169,7 @@ const BlogPost = () => {
       </Text>
       {blogPost.image && (
         <Image
-          src={blogPost.image}
+          src={getImageUrl(blogPost.image)}
           alt={blogPost.title}
           mb={4}
           maxH='300px'
