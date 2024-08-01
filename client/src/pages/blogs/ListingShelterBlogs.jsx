@@ -10,7 +10,7 @@ import {
   Text,
   Select,
 } from '@chakra-ui/react';
-import { API_URL } from '../../constants';
+import { API_URL, getImageUrl } from '../../constants';
 
 const formatDate = (timestamp) => {
   const options = {
@@ -122,7 +122,7 @@ const ShelterBlogsList = () => {
                 </Text>
                 {blog_post.image && (
                   <img
-                    src={blog_post.image}
+                    src={getImageUrl(blog_post.image)}
                     alt={blog_post.title}
                     style={{
                       maxWidth: '100%',
